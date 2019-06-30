@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    background:#00334b;
+    color: #fff;
+}
+h1{
+  text-align: center;
+}
+.container{
+  max-width: 900px;
+  margin:0 auto;
+  color: #fff;
+  position: relative;
+}
+
+.task-list{
+  margin: 10px 0px;
+}
+.add-task{
+  margin-bottom: 3px;
+
+}
+input,
+.task-item,
+.task-detail-mask,
+textarea,
+button{
+  border-radius: 3px;
+  padding: 10px;
+}
+input[type=text],input[type=date]{
+  border:0;
+  display: block;
+  width: 100%;
+}
+button{
+  display: inline-block;
+  border:0;
+  color: #333;
+}
+.remind input[type=date],.add-task input[type=text]{
+  float: left;
+  background: #eee;
+  width: 84%;
+  margin-right: 1%;
+  box-shadow: inset 2px 2px rgba(0, 0, 0, 0.4);
+}
+.remind [type=submit],.add-task [type=submit]{
+  background: #46b1e6;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 15%;
+}
+.add-task [type=submit]:hover{
+  background: rgb(49, 204, 220,0.8);
+}
+input[type=text]:hover,input[type=text]:focus,
+input[type=date]:hover,input[type=date]:focus{
+  background: #fff;
+  box-shadow: inset  2px 2px rgb(241, 147, 22);
+}
+.action {
+  color:#888;
+  font-size:90%;
+}
+.action:hover{
+  color:#333;
+}
+.fr{
+  float: right;
+
+}
+.task-item{
+  background: #fff;
+  margin-bottom: 3px;
+  color: #333;
+  cursor: pointer;
+  transition:
+  -webkit-transition:background .2s;
+  -moz-transition:background .2s;
+  -ms-transition:background .2s;
+  -o-transition:background .2s;
+  transition: background .2s;
+}
+.task-item:hover{
+  background: #ddd;
+}
+.task-content{
+  margin-left: 10px;
+}
+.task-date{
+  margin-right: 10px;
+}
+.task-detail{
+  display:none;
+  background: #fff;
+  color: #333;
+  position: absolute;
+  top: 0px;
+  right:0;
+  bottom: 0;
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+  border-radius: 3px;
+}
+.task-detail .content{
+  font-weight: 900;
+  cursor: pointer;
+}
+.desc,.content,.remind{
+  margin-bottom: 8px;
+}
+textarea{
+  border:2px solid #ddd;
+  width: 84%;
+  min-height:100px;
+  margin-right: 1%;
+}
+.task-detail-mask{
+  display:none;
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom: 0px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  /* background: rgba(30, 30, 30, 0.6); */
+}
